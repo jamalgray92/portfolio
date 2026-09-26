@@ -201,10 +201,10 @@ export default function PortfolioPage() {
             <div style={styles.aboutGrid}>
               <div style={styles.profileWrap}>
                 <img
-                  src={assetBase + "/images/profile-placeholder.svg"}
-                  alt="Jamal Gray"
-                  style={styles.profileImage}
-                />
+  src={`${assetBase}/images/jamal-profile.jpeg`}
+  alt="Jamal Gray"
+  style={styles.profileImage}
+/>
               </div>
 
               <div style={styles.aboutContent}>
