@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#e8f0ff" />
+  <text x="400" y="240" text-anchor="middle" font-size="34" font-family="Arial">
+    Data Visualization
+  </text>
+  <text x="400" y="285" text-anchor="middle" font-size="18" font-family="Arial">
+    Charts and Dashboards
+  </text>
+</svg>
