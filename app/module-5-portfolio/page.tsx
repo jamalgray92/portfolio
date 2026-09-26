@@ -2,6 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 
+// Use an asset base so images work on GitHub Pages under /portfolio and locally
+const assetBase = process.env.NODE_ENV === "production" ? "/portfolio" : "";
+
 type Project = {
   id: string;
   title: string;
@@ -15,21 +18,21 @@ const projects: Project[] = [
     id: "sumarist-clone",
     title: "Summarist Clone",
     description: "A responsive reading and audiobook platform with book discovery, library features, search, and premium-style functionality built in React.",
-    image: "/images/summarist.png",
+    image: assetBase + "/images/summarist.png",
     url: "https://jamalgray92.github.io/summarist-clone/",
   },
   {
     id: "website-clone",
     title: "Website Clone",
     description: "A responsive front-end recreation that matches modern landing page design, spacing, typography, and responsive behavior.",
-    image: "/images/website-clone.png",
+    image: assetBase + "/images/website-clone.png",
     url: "https://jamalgray92.github.io/website-clone/",
   },
   {
     id: "react-movie-app",
     title: "React Movie App",
     description: "A React movie search application with live results, sorting, ratings, responsive layouts, and movie detail navigation.",
-    image: "/images/react-movie-app.png",
+    image: assetBase + "/images/react-movie-app.png",
     url: "https://jamalgray92.github.io/react-movie-app/",
   },
 ];
@@ -198,7 +201,7 @@ export default function PortfolioPage() {
             <div style={styles.aboutGrid}>
               <div style={styles.profileWrap}>
                 <img
-                  src="/images/jamal-profile.jpeg"
+                  src={assetBase + "/images/profile-placeholder.svg"}
                   alt="Jamal Gray"
                   style={styles.profileImage}
                 />
